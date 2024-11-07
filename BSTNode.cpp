@@ -1,4 +1,6 @@
+//
 #include "BSTNode.hpp"
+<<<<<<< HEAD
 
 
 /*
@@ -8,6 +10,8 @@ Creates node in the subtree rooted at this node
 Parameters: None
 Return value: None
 */
+=======
+>>>>>>> 07829c2 (Comment Blocks on BSTNode.cpp)
 template <typename T>
 BSTNode<T>::BSTNode() : data(T()), left(nullptr), right(nullptr), parent(nullptr) {}
 
