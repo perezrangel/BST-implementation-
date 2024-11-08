@@ -98,6 +98,20 @@ RBTreeNode<T>* RBTreeNode<T>::treeMax() {
     return current;
 }
 
+
+
+/*
+/*
+printPreOrderTraversal
+Omar Perez
+This method performs a pre-order traversal of the subtree rooted at the current node.
+It prints the data of each node in the subtree to in pre-order 
+sequence.
+
+Parameters: None
+
+Return value: None
+*/
 template <typename T>
 void RBTreeNode<T>::printPreOrderTraversal() const {
     cout << data << " ";
