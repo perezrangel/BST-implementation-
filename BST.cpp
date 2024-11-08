@@ -121,7 +121,7 @@ insert
 Omar Perez
 This method inserts a new node with the specified value into the Binary Search Tree.
 It creates a new node, finds the appropriate position for the node within the tree, 
-and adjusts parent and child pointers to maintain the BST structure.
+and adjusts parent and child pointers to maintain structure.
 
 Parameters:
 value
@@ -160,6 +160,9 @@ BSTNode<T>* BST<T>::insert(T value) {
     return z;
 }
 
+
+
+
 template <typename T>
 void BST<T>::remove(T value) {
     BSTNode<T>* z = search(value);
@@ -191,6 +194,21 @@ void BST<T>::remove(T value) {
     nodeCount--;
 }
 
+
+/*
+search
+Omar Perez
+This method searches for a node with the specified value in the BST.
+Starting from the root, it traverses the tree based on comparisons with the node values
+to find the target node.
+
+Parameters:
+value
+
+Return value:
+A pointer to the node containing the  value if it exists in the tree; else it 
+returns a nullptr.
+*/
 template <typename T>
 BSTNode<T>* BST<T>::search(T value) const {
     BSTNode<T>* x = root;
@@ -228,6 +246,17 @@ BSTNode<T>* BST<T>::treeMax() const {
     return x;
 }
 
+/*
+printPreOrderTraversal
+Omar Perez
+This method initiates the pre-order traversal of the entire Binary Search Tree,
+starting from the root node. It prints the values of all nodes in pre-order 
+sequence (root, left, right) to standard output.
+
+Parameters: None
+
+Return value: None
+*/
 template <typename T>
 void BST<T>::printPreOrderTraversal() const {
     printPreOrder(root);
