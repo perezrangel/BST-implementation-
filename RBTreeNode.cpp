@@ -1,9 +1,32 @@
+//==============================================================
+// Names: Aisha Barry, Amaya Joshi, Omar Perez
+// Class: CS 271-01
+// Date:11/07/2024
+// About: RBTreeNode.cpp includes implementations that directly 
+// impact node structure and subtrees. 
+//==============================================================
 #include "RBTreeNode.hpp"
 
+
+/*
+Constructor
+Omar Perez
+Creates node in the subtree rooted at this node 
+Parameters: None
+Return value: None
+*/
 template <typename T>
 RBTreeNode<T>::RBTreeNode()
     : data(T()), left(nullptr), right(nullptr), parent(nullptr), color(RED) {}
 
+
+/*
+Copy Constructor
+Omar Perez
+do this later
+Parameters: None
+Return value: None
+*/
 template <typename T>
 RBTreeNode<T>::RBTreeNode(const RBTreeNode<T>& other)
     : data(other.data), left(nullptr), right(nullptr), parent(nullptr), color(other.color) {
