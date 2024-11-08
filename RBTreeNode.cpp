@@ -71,6 +71,15 @@ RBTreeNode<T>& RBTreeNode<T>::operator=(const RBTreeNode<T>& other) {
     return *this;
 }
 
+
+/*
+treeMin
+This method tranverses the left child nodes until
+it reaches the leftmost node. 
+Return: Pointer to the leftmost number
+Parameter: none
+
+*/
 template <typename T>
 RBTreeNode<T>* RBTreeNode<T>::treeMin() {
     RBTreeNode<T>* current = this;
