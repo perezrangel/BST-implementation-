@@ -102,10 +102,10 @@ BSTNode<T>* BSTNode<T>::treeMax() {
 /*
 printPreOrderTraversal
 Omar Perez
-THis method prints the stdout of the inorder traversal for the subtree 
-that starts at this
-Parameters: 
-Return value:
+This method prints the stdout of the pre-order traversal for the subtree 
+that starts at this node.
+Parameters: None
+Return value: None
 */
 template <typename T>
 void BSTNode<T>::printPreOrderTraversal() const {
