@@ -1,3 +1,10 @@
+//==============================================================
+// Names: Aisha Barry, Omar Perez, Amaya Joshi
+// Class: CS 271-01
+// Date: 11/07/2024
+// About: BST.cpp contains the implementations for
+// the BST class. Handling tree-wide structure and management
+//==============================================================
 #include "BST.hpp"
 
 template <typename T>
@@ -108,6 +115,21 @@ long BST<T>::size() const {
     return nodeCount;
 }
 
+
+/*
+insert
+Omar Perez
+This method inserts a new node with the specified value into the Binary Search Tree.
+It creates a new node, finds the appropriate position for the node within the tree, 
+and adjusts parent and child pointers to maintain the BST structure.
+
+Parameters:
+value
+
+Return value:
+A pointer to the newly inserted node.
+
+*/
 template <typename T>
 BSTNode<T>* BST<T>::insert(T value) {
     BSTNode<T>* y = nullptr;
